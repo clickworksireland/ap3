@@ -8,6 +8,7 @@ import {HeaderLogo} from '../../providers/header-logo/header-logo';
 
 import {GlobalVars} from '../../providers/globalvars/globalvars';
 import {IAP} from '../../providers/inapppurchase/inapppurchase';
+import { LongerTitlesModule } from "../../pipes/longer-titles/longer-titles.modules";
 
 /**
  * Any changes done to this file needs to be copied over to
@@ -57,7 +58,7 @@ export class CustomPage implements OnInit, OnDestroy {
 	rtlBack: boolean = false;
 	language: any;
 	templateUrl: string;
-	extraModules = [IonicModule, TranslateModule];
+	extraModules = [IonicModule, TranslateModule, LongerTitlesModule];
 	langs: any;
 	segments: any;
 	show_segments: boolean = false;
